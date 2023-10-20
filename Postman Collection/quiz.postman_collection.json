@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "5121aae9-dcb2-45a7-aea2-fbb4c4a580a4",
+		"name": "quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25824978"
+	},
+	"item": [
+		{
+			"name": "How to play",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/howToPlay",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"howToPlay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "See all possible questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/allQuestions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allQuestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "See all answers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/answers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"answers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  5 random questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Answer 5 questions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/answer?a1=&a2&a3=&a4=&a5=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"answer"
+					],
+					"query": [
+						{
+							"key": "a1",
+							"value": "",
+							"description": "Answer must in the following form: questionNumber.answer"
+						},
+						{
+							"key": "a2",
+							"value": null
+						},
+						{
+							"key": "a3",
+							"value": ""
+						},
+						{
+							"key": "a4",
+							"value": ""
+						},
+						{
+							"key": "a5",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
